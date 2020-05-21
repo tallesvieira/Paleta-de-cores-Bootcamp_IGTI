@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/style/reset.css" />
+    <link rel="stylesheet" href="./public/style/style.css" />
+    <title>RGB</title>
+  </head>
+  <body>
+    <div class="card">
+      <h2>Paleta de Cores</h2>
+      <table>
+        <tr>
+          <td>(R): Vermelho</td>
+          <td>
+            <input
+              type="range"
+              min="0"
+              max="255"
+              value="0"
+              id="colorRangeRed"
+            />
+          </td>
+
+          <td><input type="text" id="valueColorRed" value="0" disabled /></td>
+        </tr>
+        <tr>
+          <td>(G): Verde</td>
+          <td>
+            <input
+              type="range"
+              min="0"
+              max="255"
+              value="0"
+              id="colorRangeGreen"
+            />
+          </td>
+
+          <td>
+            <input type="text" id="valueColorGreen" value="0" disabled />
+          </td>
+        </tr>
+
+        <tr>
+          <td>(B): Azul</td>
+          <td>
+            <input
+              type="range"
+              min="0"
+              max="255"
+              value="0"
+              id="colorRangeBlue"
+            />
+          </td>
+
+          <td>
+            <input type="text" id="valueColorBlue" value="0" disabled />
+          </td>
+        </tr>
+      </table>
+      <h4 id="windowColor"></h4>
+      <p id="rgbColor"></p>
+    </div>
+    <script src="./public/script.js"></script>
+  </body>
+</html>
